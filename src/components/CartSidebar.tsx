@@ -186,7 +186,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose }) => {
                       value={checkoutForm.address}
                       onChange={handleInputChange}
                       required
-                      rows={3}
+                      rows={1}
                       className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-300 resize-none"
                       placeholder="Enter your full address"
                     />
