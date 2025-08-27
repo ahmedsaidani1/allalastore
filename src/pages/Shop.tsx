@@ -34,7 +34,7 @@ const Shop = () => {
       price: 39 ,
       originalPrice: 59 ,
       rating: 4.8,
-      image: 'https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg',
+      image: 'https://image.api.playstation.com/vulcan/ap/rnd/202211/0714/ojKZ7l0T2M5egR9YHIjVhI0R.png',
       discount: 33
     },
     {
@@ -160,19 +160,19 @@ const Shop = () => {
                 className="group bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transform hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="flex flex-col sm:flex-row">
-                  <div className="relative w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
-                    <img
-                      src={game.image}
-                      alt={game.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                    {game.discount && (
-                      <div className="absolute top-3 left-3 bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] text-white px-3 py-1 rounded-lg text-sm font-semibold shadow-lg">
-                        -{game.discount}%
-                      </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
+                  <div className="relative w-full sm:w-48 lg:w-56 aspect-w-1 aspect-h-2 sm:aspect-h-48">
+  <img
+    src={game.image}
+    alt={game.title}
+    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 rounded-xl"
+  />
+  {game.discount && (
+    <div className="absolute top-3 left-3 bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] text-white px-3 py-1 rounded-lg text-sm font-semibold shadow-lg">
+      -{game.discount}%
+    </div>
+  )}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+</div>
                   
                   <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
                     <div>
