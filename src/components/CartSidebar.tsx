@@ -142,8 +142,8 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose }) => {
               </div>
             ) : (
               // Checkout Form
-              <div className="p-6">
-                <form onSubmit={handleCheckoutSubmit} className="space-y-6">
+              <div className="p-5">
+                <form onSubmit={handleCheckoutSubmit} className="space-y-5">
                   <div>
                     <label className="block text-white font-medium mb-2">
                       <User className="h-4 w-4 inline mr-2" />
